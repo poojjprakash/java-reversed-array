@@ -1,0 +1,33 @@
+import java.util.Arrays;
+import java.util.Scanner;
+public class Main
+{
+    
+	public static void main(String[] args) {
+	    int i,c=0;
+	     Scanner s = new Scanner(System.in);
+	    
+	    int b[]= new int[5];
+	    int s1=0, e=b.length-1;
+	    
+	    System.out.println("enter the nos: ");
+	    for(i=0;i<b.length;i++){
+	    b[i]=s.nextInt();
+	    }
+	    
+	    while(s1<e){
+	        int t=b[s1];
+	        b[s1]=b[e];
+	        b[e]=t;
+	        s1++;
+	        e--;
+	    }
+	    
+	   System.out.println("after reversed");  
+ 	for( i=0;i<b.length;i++)
+ 	System.out.print(b[i]+" ");
+ 	
+ 	
+			
+	}
+}
